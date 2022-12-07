@@ -1,0 +1,70 @@
+body, main {
+    background-color: #fbfbfb;
+    margin: 0;
+    overflow: hidden;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+#video {
+    display: block;
+    margin: 0 auto;
+    align-self: center;
+    width: 60vw;
+    padding: 5em 0em;
+    animation: video-animatie 1.2s 1;
+}
+@keyframes video-animatie {
+  0%   { opacity: 0%; }
+  100% { opacity: 100%; }
+}
+
+
+
+main section {
+    height: 80vh;
+}
+
+
+main div {
+    height: 20vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+main div img {
+    width: 10em;
+    height: 10em;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin: 1em 1em;
+    animation: knop-animatie 1.2s 1;
+
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10%;
+    transition: .5s;
+}
+@keyframes knop-animatie {
+  0%   { opacity: 0%; margin: 0px}
+  50%   { opacity: 0%; margin: 0px}
+  100% { opacity: 100%; margin: 0 50px}
+}
+main div img:hover{
+    transform: scale(1.05);
+    border-radius: 20%;
+}

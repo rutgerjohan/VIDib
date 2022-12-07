@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Loading...</title>
+    </head>
+
+    <body>
+        <!--<img src="img/loader/loader.gif" alt="">-->
+        <video id="loadingScreen" autoplay muted>
+            <source src="assets/loadingScreen.mp4" type="video/mp4">
+        </video>
+
+        <script>
+            var setTimeout;
+
+            setTimeout(function() {
+                location.href = "bootje.html";
+            }, 7100);
+        </script>
+
+    </body>
+
+    <style>
+        body {
+            background-color: #fbfbfb;
+        }
+
+        video {
+            margin-top: -7.25em;
+            padding: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            height: auto;
+            width: 100%;
+        }
+    </style>
+</html>
